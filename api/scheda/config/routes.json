@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/schedas",
+      "handler": "scheda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/schedas/count",
+      "handler": "scheda.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/schedas/:id",
+      "handler": "scheda.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/schedas",
+      "handler": "scheda.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/schedas/:id",
+      "handler": "scheda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/schedas/:id",
+      "handler": "scheda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

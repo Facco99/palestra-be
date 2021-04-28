@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esercizios",
+  "info": {
+    "name": "Esercizio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "serie": {
+      "required": true,
+      "type": "integer"
+    },
+    "ripetizioni": {
+      "type": "string",
+      "required": true
+    },
+    "recupero": {
+      "type": "string",
+      "required": true
+    },
+    "descrizione": {
+      "type": "string"
+    },
+    "schede": {
+      "collection": "scheda",
+      "via": "esercizi",
+      "dominant": true
+    },
+    "immagine": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
